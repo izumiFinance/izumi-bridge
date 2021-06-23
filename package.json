@@ -7,5 +7,27 @@
     "@openzeppelin/contracts": "^4.1.0",
     "chai": "^4.3.4",
     "hardhat": "^2.4.1"
-  }
+  },
+  "name": "izumi-contracts",
+  "description": "This is the repo for Izumi Contracts.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IzumiFinanceLab/Izumi-contracts.git"
+  },
+  "keywords": [
+    "smartcontracts",
+    "bridge"
+  ],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IzumiFinanceLab/Izumi-contracts/issues"
+  },
+  "homepage": "https://github.com/IzumiFinanceLab/Izumi-contracts#readme"
 }
