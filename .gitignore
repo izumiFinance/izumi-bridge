@@ -1,0 +1,7 @@
+node_modules
+scripts/secret.*
+build/*
+.secret.js
+*.swp
+*.swc
+
