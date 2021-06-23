@@ -21,3 +21,10 @@ This is the repo for Izumi Contracts.
     ```
 
 ## Deploy Contracts
+
+### Compile Contracts
+
+```bash
+npx hardhat compile
+```
+

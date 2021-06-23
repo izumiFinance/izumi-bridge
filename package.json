@@ -23,7 +23,6 @@
     "smartcontracts",
     "bridge"
   ],
-  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
