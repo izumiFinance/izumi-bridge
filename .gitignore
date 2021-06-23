@@ -1,3 +1,4 @@
 node_modules
-src/secret.js
+scripts/secret.*
 build/*
+.*
