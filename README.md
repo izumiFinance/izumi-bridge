@@ -2,14 +2,14 @@
 
 
 <div align="center">
-  <a href="http://izumi.finance"> <img width="450px" height="auto" 
+  <a href="http://izumi.finance"> <img width="250px" height="auto" 
     src="assets/logo.png"></a>
 </div>
 
 ---
 
 
-This Repo contains the most contracts used in izumi, supportted by [Truffle](https://www.trufflesuite.com/docs/truffle/quickstart).
+This Repo contains the most contracts used in izumi, backboned by [Truffle](https://www.trufflesuite.com/docs/truffle/quickstart).
 
 
 ### Steps to deloy contracts on certain blockchains.
