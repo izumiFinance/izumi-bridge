@@ -1,0 +1,28 @@
+{
+  "name": "izumi-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".secret.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle-plugin-verify": "^0.5.10",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "@openzeppelin/contracts": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IzumiFinanceLab/Izumi-contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IzumiFinanceLab/Izumi-contracts/issues"
+  },
+  "homepage": "https://github.com/IzumiFinanceLab/Izumi-contracts#readme"
+}
