@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <a href="http://izumi.finance"> <img width="450px" height="auto" 
+  <a href="http://izumi.finance"> <img width="250px" height="auto" 
     src="assets/logo.png"></a>
 </div>
 
