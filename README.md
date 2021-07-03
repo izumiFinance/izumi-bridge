@@ -9,7 +9,7 @@
 ---
 
 
-This Repo contains the most contracts used in izumi, supportted by [Truffle](https://www.trufflesuite.com/docs/truffle/quickstart).
+This Repo contains the most contracts used in izumi, backboned by [Truffle](https://www.trufflesuite.com/docs/truffle/quickstart).
 
 
 ### Steps to deloy contracts on certain blockchains.
