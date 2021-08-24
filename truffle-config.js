@@ -27,6 +27,11 @@
 const secret = require('./.secret.js')
 const pk = secret.pk
 const apikeyBscscan = secret.apikey_bscscan
+const apikeyBscTestscan = secret.apikey_bscscan
+const apikeyMaticTestscan = secret.apikey_polygonscan
+const apikeyMaticscan = secret.apikey_polygonscan
+const apikeyFtmscan = secret.apikey_ftmscan
+const apikeyHecoscan = secret.apikey_hecoscan
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -34,6 +39,11 @@ const bscTestRpcUrl = 'https://data-seed-prebsc-1-s1.binance.org:8545/'
 const bscRpcUrl = 'https://bsc-dataseed.binance.org'
 const maticTestRpcUrl = 'https://rpc-mumbai.maticvigil.com'
 const maticRpcUrl = 'https://rpc-mainnet.maticvigil.com'
+const fantomRpcUrl = 'https://rpcapi.fantom.network'
+const harmonyRpcUrl = 'https://api.harmony.one'
+const hecoRpcUrl = 'https://http-mainnet-node.huobichain.com'
+const optimismRpcUrl = 'https://mainnet.optimism.io'
+const optimismTestRpcUrl = 'https://kovan.optimism.io'
 
 module.exports = {
   /**
@@ -84,6 +94,18 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
 
+    OP: {
+        network_id: 10,
+        gasPrice: 15000000, /// need white list
+        gas: 500000000,
+        provider: () => new HDWalletProvider(pk, optimismRpcUrl),
+    },
+    OPTestnet: {
+        network_id: 69,
+        gasPrice: 15000000,
+        gas: 12000000000,
+        provider: () => new HDWalletProvider(pk, optimismTestRpcUrl),
+    },
     BSCTestnet: {
         network_id: 97,
         gasPrice: 20000000000,
@@ -99,7 +121,7 @@ module.exports = {
     MaticTestnet: {
         network_id: 80001,
         gasPrice: 20000000000,
-        gas: 5500000,
+        gas: 5000000,
         provider: () => new HDWalletProvider(pk, maticTestRpcUrl),
     },
     Matic: {
@@ -107,6 +129,24 @@ module.exports = {
         gasPrice: 5000000000,
         gas: 5500000,
         provider: () => new HDWalletProvider(pk, maticRpcUrl),
+    },
+    Fantom: {
+        network_id: 250,
+        gasPrice: 100000000000,
+        gas: 5500000,
+        provider: () => new HDWalletProvider(pk, fantomRpcUrl),
+    },
+    Harmony: {
+        network_id: 1666600000,
+        gasPrice: 5000000000,
+        gas: 5500000,
+        provider: () => new HDWalletProvider(pk, harmonyRpcUrl),
+    },
+    Heco: {
+        network_id: 128,
+        gasPrice: 2500000000,
+        gas: 5500000,
+        provider: () => new HDWalletProvider(pk, hecoRpcUrl),
     },
   },
 
@@ -143,6 +183,10 @@ module.exports = {
     'truffle-plugin-verify'
   ],
   api_keys: {
-      bscscan: apikeyBscscan
-  }
+      bscscan: apikeyBscscan,
+      polygonscan: apikeyMaticscan,
+      ftmscan: apikeyFtmscan,
+      hecoinfo: apikeyHecoscan,
+  },
+  contracts_directory: '/home/yong/Prod/Izumi-contracts/contracts'
 };

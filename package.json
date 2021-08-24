@@ -7,9 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "truffle-plugin-verify": "^0.5.10",
+    "@openzeppelin/contracts": "^4.1.0",
     "@truffle/hdwallet-provider": "^1.4.1",
-    "@openzeppelin/contracts": "^4.1.0"
+    "truffle-plugin-verify": "^0.5.10"
   },
   "devDependencies": {},
   "scripts": {
