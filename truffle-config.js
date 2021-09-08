@@ -44,6 +44,7 @@ const harmonyRpcUrl = 'https://api.harmony.one'
 const hecoRpcUrl = 'https://http-mainnet-node.huobichain.com'
 const optimismRpcUrl = 'https://mainnet.optimism.io'
 const optimismTestRpcUrl = 'https://kovan.optimism.io'
+const izumiRpcUrl = 'http://47.241.103.6:9545/'
 
 module.exports = {
   /**
@@ -147,6 +148,12 @@ module.exports = {
         gasPrice: 2500000000,
         gas: 5500000,
         provider: () => new HDWalletProvider(pk, hecoRpcUrl),
+    },
+    izumi: {
+        network_id: 1337,
+        gasPrice: 25000000,
+        gas: 125000000,
+        provider: () => new HDWalletProvider(pk, izumiRpcUrl),
     },
   },
 
